@@ -1,6 +1,6 @@
 # Twilio Studio Insights
 
-This repository contains a web application for browsing [Twilio Studio](https://www.twilio.com/studio) flow execution data. It was born out of the need to have a tool like [Messaging Insights](https://www.twilio.com/docs/messaging/guides/messaging-insights) but for Twilio Studio.
+This repository contains a web application for browsing flow execution data from [Twilio Studio](https://www.twilio.com/studio). It was born out of the need to have a tool like [Messaging Insights](https://www.twilio.com/docs/messaging/guides/messaging-insights) but for Twilio Studio.
 
 The app is designed to be deployed on the [Twilio Serverless Runtime](https://www.twilio.com/docs/serverless/functions-assets).
 
