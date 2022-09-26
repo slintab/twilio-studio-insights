@@ -9,12 +9,9 @@
     "build": "webpack --config webpack.config.js"
   },
   "dependencies": {
-    "@material-ui/core": "^4.12.4",
     "@twilio-paste/core": "^15.3.0",
     "@twilio-paste/icons": "^9.2.0",
     "@twilio/runtime-handler": "1.2.4",
-    "@types/react": "^18.0.21",
-    "@types/react-dom": "^18.0.6",
     "axios": "^0.27.2",
     "dayjs": "^1.11.5",
     "lodash": "^4.17.21",
@@ -24,6 +21,8 @@
     "twilio": "^3.56"
   },
   "devDependencies": {
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
     "@babel/core": "^7.19.1",
     "@babel/preset-env": "^7.19.1",
     "@babel/preset-react": "^7.18.6",
