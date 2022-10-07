@@ -36,6 +36,7 @@ export default ({ data }: { data: StudioExecution[] }) => {
       <DataTable
         columns={columns}
         data={data}
+        pagination
         expandableRows
         expandableRowsComponent={ExecutionTableRowContent}
       />
