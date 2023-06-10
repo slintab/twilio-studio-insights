@@ -23,7 +23,7 @@ That's it! Once the deployment is completed, the URL of your newly deployed appl
 
 The application is designed to be deployed on the [Twilio Serverless Runtime](https://www.twilio.com/docs/serverless/functions-assets). This makes the solution easy to deploy, but ultimately results in limited scalability, as the application is subject to the 10 second maximum function execution and the 100 API call/second limit of the Twilio Runtime. To mitigate the risk of exceeding the execution limit the application only displays data for the past 7 days.
 
-To work with larger datasets it is recommended to use an external database in combination with [Twilio Event Streams](https://www.twilio.com/event-streams). For an example on how this can be implemented, please see the [Flex IVR Insights plugin](https://github.com/slintab/flex-ivr-insights) which was built using this aforementioned approach.
+To work with larger datasets it is recommended to use an external database in combination with [Twilio Event Streams](https://www.twilio.com/event-streams). For an example on how this can be implemented, please see the [Flex IVR Insights plugin](https://github.com/slintab/flex-ivr-dashboard) which was built using this aforementioned approach.
 
 
 ## Maintainer
