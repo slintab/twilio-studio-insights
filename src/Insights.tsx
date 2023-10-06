@@ -2,8 +2,7 @@ import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 import axios, { AxiosResponse } from "axios";
 import { Theme } from "@twilio-paste/theme";
-import { Box } from "@twilio-paste/core/box";
-import { Flex } from "@twilio-paste/core/flex";
+import { Grid, Column } from "@twilio-paste/core/grid";
 import SearchBar from "./components/SearchBar";
 import Loader from "./components/Loader";
 import AlertMessage from "./components/AlertMessage";
@@ -59,22 +58,26 @@ const Insights = () => {
   return (
     //@ts-ignore
     <Theme.Provider theme="default">
-      <Flex hAlignContent="center" vertical>
-        <Box padding="space50" margin="space30" width="100vh">
-          <SearchBar
-            flow={selectedFlow}
-            flowList={flowList}
-            flowSelectFn={onFlowSelect}
-          />
-          {loading && <Loader />}
-          {apiError && <AlertMessage message={"Error loading studio data."} />}
-          {!loading && !apiError && reportData && (
-            <Report reportData={reportData} />
-          )}
-        </Box>
-      </Flex>
+      <div className="main">
+        <Grid vertical>
+          <Column>
+            <SearchBar
+                flow={selectedFlow}
+                flowList={flowList}
+                flowSelectFn={onFlowSelect}
+            />
+          </Column>
+          <Column>
+            {loading && <Loader />}
+            {apiError && <AlertMessage message={"Error loading studio data."} />}
+            {!loading && !apiError && reportData && (
+                <Report reportData={reportData} />
+            )}
+          </Column>
+        </Grid>
+      </div>
     </Theme.Provider>
   );
-};
+  };
 
 ReactDOM.render(<Insights />, document.getElementById("content"));
